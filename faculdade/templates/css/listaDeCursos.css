@@ -8,14 +8,15 @@ nav h1{
 }
 
 .borda {
-    float: left;
-    width: 450px;
-    display: 200px;
+   float: left;
+    width: 420px;
     display: table;
     border: solid 3px rgb(142, 160, 168);
     border-radius: 10px;
     text-align: center;
     margin: 15px;
+    box-sizing: border-box;
+    height: 130px;
     
 }
 .row:after {
