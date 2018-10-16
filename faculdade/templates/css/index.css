@@ -17,21 +17,20 @@ p{
 
 .column {
     float: left;
-    padding: 40px;
+    padding: 1%;
    
 }
 
 /* Left and right column */
 .column.side {
-    width: 20%;
-    
+    width: 25%;
     background-image: url("../img/image1.1.png");
     border-top: 6px solid #ac9d1cfd;
 }
 
 /* Middle column */
 .column.middle {    
-    width: 35%;
+    width: 44%;
     
     background-image: url("../img/fundo4.png");
     border-top: 6px solid #ac9d1cfd;
