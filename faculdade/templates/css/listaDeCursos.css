@@ -9,7 +9,7 @@ nav h1{
 
 .borda {
    float: left;
-    width: 420px;
+    width: 42%;
     display: table;
     border: solid 3px rgb(142, 160, 168);
     border-radius: 10px;
@@ -27,6 +27,7 @@ nav h1{
 
 div h2{
     background-image: url("../img/fundo3.png");
+    color: white;
 }
  
 
@@ -37,8 +38,5 @@ div h3{
 }
 
 h1.color{
-    color:white;
-}
-p{
     color:white;
 }
