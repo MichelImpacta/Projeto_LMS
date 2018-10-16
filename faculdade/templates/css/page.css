@@ -31,7 +31,7 @@ nav button{
 
 
 nav a{
-    color: rgba(0, 0, 0, 0.932);
+    color: white;
     text-decoration:  none;
 }
 
@@ -66,6 +66,7 @@ nav li:hover{
 }
 body {
     background-image: url("../img/fundo2.png");
+
 }
 
 footer {
@@ -78,4 +79,8 @@ footer {
     width: 99%;
     bottom: 0;
     clear: both;
+}
+
+p,h1,h2,h3{
+    color:white;
 }
