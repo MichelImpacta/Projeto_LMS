@@ -11,7 +11,7 @@ nav h1{
 
 nav  {
     display: block;
-    width: 98,5%;
+    width: 99%;
     background-image: url("../img/fundo3.png");
     padding: 10px;
 }
@@ -19,14 +19,13 @@ nav  {
 nav button{
     
     display: block;
-    width: 98,5%;
+ 
     background-color: #ac9d1cfd ;
     padding: 10px;
     border-radius: 10px;
     position: absolute; 
-	right: 150px; 
-	top: 260px;
-
+    right: 21%;
+    top: 31%
 }
 
 
@@ -71,39 +70,12 @@ body {
 
 footer {
     left: 0;
-    position: fixed;
+    
     background-image: url("../img/fundo.png");
     padding: 10px;
     text-align: center;
     color: white;
-    width: 100%;
+    width: 99%;
     bottom: 0;
+    clear: both;
 }
-
-h2{
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgb(0, 89, 255);
-}
-
-h6 {
-    
-}
-
-font{
-    color:white;
-    
-}
-font.color.style{
-    color:black;
-    font-style: italic;
-
-}
-font.style{
-    font-style: italic;
-}
-
-
-/* formatação do login
-*/
