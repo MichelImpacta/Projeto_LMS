@@ -29,7 +29,7 @@
 <h3 align = "center"></h3>
 
 <div>
-				<div  class="box-top"> <h3>Faculdades oferecem cada vez mais cursos que atendam às expectativas</h3></div>
+				<div  class="box-top"> <h3>Se capacite na criação de sites e em linguagens de programação</h3></div>
 				<div class="box-pane">
                 <div class="box-image"> <img src="./img/image1.1.png" /></div>
                 
@@ -48,7 +48,7 @@
                     O Curso
                    Aqueles que escolhem seguir o caminho do desenvolvimento serão preparados e treinados em procedimentos operacionais padronizados, dotados de conhecimentos do software e hardware para seu trabalho.
                     
-                    Formado, o profissional em análise de sistemas pode atuar em várias áreas, como:
+                 
                     <div class="box-image"> <img src="./img/ads.jpg" /></div>
                     
 </article>
