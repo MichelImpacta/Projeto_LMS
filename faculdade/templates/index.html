@@ -1,31 +1,31 @@
+{% load static %}
+
 <!DOctype HTML>
 <HTML lang ="pt-br">
     <meta charset= "utf-8">
 <head>
     <title> Home Page </title>
-<link rel="stylesheet" type="text/css" href="./css/index.css">
-<link rel="stylesheet" type="text/css" href="./css/page.css">
-<link rel="stylesheet" type="text/css" href="./css/login.css">
-<script type="text/javascript" src="./javaScripts/login.js"></script>
+<link rel="stylesheet" href="{% static './css/index.css' %}">
+<link rel="stylesheet" href="{% static './css/page.css' %}">
+<link rel="stylesheet" href="{% static './css/login.css' %}">
+<script type="text/javascript" src="{% static "./js/login.js" %}"></script>
 
 </head>
 <body>  
 </div>
 
     <header>
-            
-        <img align ="left" width="200px" height="150px" src='./img/Logo.png'>
-          
-            <h1 class = "nomepagina">Focus</h1>
+      <img align ="left" width="200px" height="150px" src="{% static "./img/logo.png" %}">    
+          <h1 class = "nomepagina">Focus</h1>
    </header>
 <nav>
 <h1>Menu Principal</h1>
 <ul>
-    <li><a href="./index.html"><font>Pagina Inicial</font></a> </li>
-    <li><a href="./listaDeCursos.html"><font>Lista de Cursos</font></a> </li>
-    <li><a href="./disciplinas.html"><font>Disciplinas</font></a> </li>
-    <li><a href="./noticias.html"><font>Noticias</font></a> </li>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><font>LOGIN</font></button>     
+    <li><a href="/index"><font>Pagina Inicial</font></a> </li>
+    <li><a href="/listaDeCursos"><font>Lista de Cursos</font></a> </li>
+    <li><a href="/disciplinas"><font>Disciplinas</font></a> </li>
+    <li><a href="/noticias"><font>Noticias</font></a> </li>  
+    <button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span>LOGIN</span></button>     
       
 </ul>
 </nav>
@@ -35,25 +35,32 @@
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="{% static "./img/logo.png" %}">    
     </div>
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      
+      <label for="uname"><b>Login</b></label>
+      
+      <input type="text" placeholder="Digite o Usuario" name="uname" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="psw"><b>Senha</b></label>
+      
+      <input type="password" placeholder="Digite a Senha" name="psw" required>
         
-      <button type="submit">Login</button>
+      <button type="submit" style =" width: 12%; background-color: green; padding: 1%; ">Entrar</button>
+      
       <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
+        
+        <input type="checkbox" checked="checked" name="remember"> Lembrar
+
       </label>
+
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Esqueceu a<a href="#">Senha?</a></span>
     </div>
   </form>
 </div>
@@ -65,7 +72,7 @@
           <p align="center"><font>Somos uma instituição de ensino focada na area de TI com cursos de curto 
             a longo prazo incluindo programação, hardware e banco de dados, o melhor 
             custo para o conhecimento necessario sobre a tecnologia dos dias atuais.</font>
-            <img align="left" src="./img/homepage2.png" width="370px"> 
+            <img align="left" width="370px" src="{% static "./img/homepage2.png" %}">
         </p>
            
         </div>
@@ -93,20 +100,21 @@
                     implementar tecnologias de segurança para garantir o bom funcionamento dos
                      sistemas de comunicação de dados,
                      com competência para atuar em empresas de pequeno e grande porte.</font>
-                     <li><a href="./ListaDeCursos.html"><font>Ir Para os Cursos...</font></a> </li>
+                     <li><a href="/ListaDeCursos"><font>Ir Para os Cursos...</font></a> </li>
         </p>
 
         </div>
         <div class="column side">
           <h2 align ="center">Entre em Contato Conosco !</h2>
-          <p align="center"><font>Email para informaçôes:</font><br/></p>
-          <p align="center"><font>Michel.Lopes25@hotmail.com
-                                  Rickcveras@hotmail.com
-                                  igorfranco1066@hotmail.com
-          </font></p>
-          <p align="center"><font>Faculdade Impacta</font> <br/></p>
-          <p align="center" ><font>Sala 303 - Terceiro Andar</font></p>
-          <img align="left" src="./img/homepage3.png" width="370px"  >
+      <ul>
+          <li><p align="center"><font>Email para informaçôes:</font></p><li>
+          <li><p align="center"><font>Michel.Lopes25@hotmail.com</font></p></li>
+          <li><p align="center"><font>Rickcveras@hotmail.com</font></p></li>
+          <li><p align="center"><font>igorfranco1066@hotmail.com</font></p></li> </br>
+          <li><p align="center"><font>Faculdade Impacta</font></p></li>
+          <li><p align="center" ><font>Sala 303 - Terceiro Andar</font></p></li>
+      </ul>
+          <img align="left" width="370px" src="{% static "./img/homepage3.png" %}">
           
         </div>
       </div>  
