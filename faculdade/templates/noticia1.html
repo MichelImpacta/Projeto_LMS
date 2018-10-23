@@ -1,28 +1,71 @@
+{% load static %}
+
 <!DOctype HTML>
 <HTML lang ="pt-br">
     <meta charset= "utf-8">
 <head>
     <title> Mercado aquecido para o analista de sistemas </title>
-<link rel="stylesheet" type="text/css" href="./css/noticias.css">
-<link rel="stylesheet" type="text/css" href="./css/page.css">
+
+    <link rel="stylesheet" href="{% static './css/page.css' %}">
+    <link rel="stylesheet" href="{% static './css/noticias.css' %}">
+    <link rel="stylesheet" href="{% static './css/login.css' %}">
+    <script type="text/javascript" src="{% static "./js/login.js" %}"></script>
+
 </head>
 <body>
 
     <header>
-            
-        <img align ="left" width="200px" height="150px" src='./img/Logo.png'>
-          
+
+        <img align ="left" width="200px" height="150px" src="{% static "./img/logo.png" %}">    
             <h1 class = "nomepagina">Focus</h1>
+
    </header>
 <nav>
 <h1>Menu Principal</h1>
 <ul>
-    <li><a href="./index.html"><font>Pagina Inicial</font></a> </li>
-    <li><a href="./listaDeCursos.html"><font>Lista de Cursos</font></a> </li>
-    <li><a href="./disciplinas.html"><font>Disciplinas</font></a> </li>
-    <li><a href="./noticias.html"><font>Noticias</font></a> </li>   
+    <li><a href="/index"><font>Pagina Inicial</font></a> </li>
+    <li><a href="/listaDeCursos"><font>Lista de Cursos</font></a> </li>
+    <li><a href="/disciplinas"><font>Disciplinas</font></a> </li>
+    <li><a href="/noticia"><font>Noticias</font></a> </li>
+    <button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span>Login</span></button>    
 </ul>
 </nav>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="{% static "./img/logo.png" %}">    
+    </div>
+
+    <div class="container">
+      
+      <label for="uname"><b>Login</b></label>
+      
+      <input type="text" placeholder="Digite o Usuario" name="uname" required>
+
+      <label for="psw"><b>Senha</b></label>
+      
+      <input type="password" placeholder="Digite a Senha" name="psw" required>
+        
+      <button type="submit" style =" width: 12%; background-color: green; padding: 1%; ">Entrar</button>
+      
+      <label>
+        
+        <input type="checkbox" checked="checked" name="remember"> Lembrar
+
+      </label>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Esqueceu a<a href="#">Senha?</a></span>
+    </div>
+  </form>
+</div>
+
 <article>
 <h2 class="titulo" align = "center">MERCADO AQUECIDO PARA O ANALISTA DE SISTEMAS</h2>
 
@@ -31,7 +74,7 @@
 <div>
 				<div  class="box-top"> <h3>Faculdades oferecem cada vez mais cursos que atendam às expectativas</h3></div>
 				<div class="box-pane">
-                <div class="box-image"> <img src="./img/image1.1.png" /></div>
+                <div class="box-image"> <img src="{% static "./img/image1.1.png" %}"></div>
                 
                 <p><font.style>Por Marcus Lopes</font.style><br/>
                 <br/>
@@ -48,7 +91,7 @@
                     O aluno pode optar por um curso técnico ou superior de análise de sistemas. Nos dois casos, ele vai estudar todas as disciplinas teóricas e práticas ligadas à área, o que torna indispensável o gosto pelos números e a vontade de aprimorar e desenvolver novos sistemas. São elas: construção de algoritmos, desenvolvimento de software seguro, fundamentos de redes de computadores, engenharia de software, estatística, sistemas operacionais e teoria geral dos sistemas, entre outras. Apesar de ser um curso de exatas, o aluno também estuda matérias de formação humanística, como direito, responsabilidade social e meio ambiente.
                     
                     Formado, o profissional em análise de sistemas pode atuar em várias áreas, como:
-                    <div class="box-image"> <img src="./img/image1.2.png" /></div>
+                    <div class="box-image"> <img src="{% static "./img/image1.2.png" %}"></div>
                     <p>
                     <b>Prestação de serviços:</b> atua como autônomo em consultorias ou em empresas prestadoras de serviços de TI. Pode também trabalhar no atendimento a particulares.
                     <br/><br/><b>Analista de suporte:</b> atua na manutenção da estrutura física de computadores, estrutura de rede de área local e sistemas operacionais.
