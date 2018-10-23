@@ -1,0 +1,59 @@
+<!DOctype HTML>
+<HTML lang ="pt-br">
+    <meta charset= "utf-8">
+<head>
+    <title> Administração - Curso </title>
+<link rel="stylesheet" type="text/css" href="./css/noticias.css">
+<link rel="stylesheet" type="text/css" href="./css/page.css">
+</head>
+<body>
+
+    <header>
+            
+        <img align ="left" width="200px" height="150px" src='./img/Logo.png'>
+          
+            <h1 class = "nomepagina">Focus</h1>
+   </header>
+<nav>
+<h1>Menu Principal</h1>
+<ul>
+    <li><a href="./index.html"><font>Pagina Inicial</font></a> </li>
+    <li><a href="./listaDeCursos.html"><font>Lista de Cursos</font></a> </li>
+    <li><a href="./disciplinas.html"><font>Disciplinas</font></a> </li>
+    <li><a href="./noticias.html"><font>Noticias</font></a> </li>   
+</ul>
+</nav>
+<article>
+<h2 class="titulo" align = "center">Curso completo de Administração</h2>
+
+<h3 align = "center"></h3>
+
+<div>
+				<div  class="box-top"> <h3>Especialize-se no nosso curso superior de Administração </h3></div>
+				<div class="box-pane">
+                <div class="box-image"> <img src="./img/image1.1.png" /></div>
+                
+                <p><font.style>Por Marcus Lopes</font.style><br/>
+                <br/>
+                <br/>
+                <br/>
+
+                A Administração é a ciência social que estuda e sistematiza as práticas usadas para administrar, ou seja cuidar com sabedoria de certas informações, lucros e investimentos.
+                    
+                 A Administração é uma área do conhecimento fundamentada em um conjunto de princípios, normas e funções elaboradas para disciplinar os fatores de produção, tendo em vista o alcance de determinados fins como maximização de lucros ou adequada prestação de serviços públicos..
+                    
+                 É uma área do conhecimento fundamentada em um conjunto de princípios, normas e funções elaboradas para disciplinar os fatores de produção, tendo em vista o alcance de determinados fins como maximização de lucros ou adequada prestação de serviços públicos.<br/><br/>
+                    
+                    O Curso
+                    O Curso de administração da Focus tem como principal objetivo prepar o aluno ao mercado de tabalho sendo assim capaz de administrar empresas de pequeno, médio e grande porte.
+                    
+                    
+                    <div class="box-image"> <img src="./img/administração.jpg" /></div>
+                    
+</article>
+<footer>
+    Projeto LMS - Todos os Direitos Reservados
+</footer>
+
+</body>    
+</HTML>
