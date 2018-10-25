@@ -31,6 +31,9 @@
             <li><a href="/noticias"><font>Noticias</font></a> </li>
             <button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span>Login</span>
             </button>
+            <button class="button matricula"onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+            <span>Matricule-se</span></button>
+            
         </ul>
     </nav>
 
@@ -68,6 +71,41 @@
     </div>
   </form>
 </div>
+    
+<article>
+<div id="id02" class="modal">
+  <div>
+  <form class="matricula-modal-content animate" action="/action_page.php">
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nome..">
+          
+            <label for="lname">Sobrenome:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Sobrenome..">
+          
+            <label for="Telefone">Telefone de Contato:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Telefone..">
+        
+            <label for="email">email para Contato:</label>
+            <input type="text" id="lname" name="lastname" placeholder="email..">
+        
+            <label for="Selecione o Curso">Selecione o Curso</label>
+            <select id="Curso" name="Cursos..">
+            <option value="Administração">Administração</option>
+            <option value="Analise e Desenvolvimento de Sistemas">Analise e Desenvolvimento de Sistemas</option>
+            <option value="Gestão Tecnologia da Informação">Gestão Tecnologia da Informação</option>
+            <option value="Jogos Digitais">Jogos Digitais</option>
+            <option value="Sociedade e Sustentabilidade">Sociedade e Sustentabilidade</option>
+            <option value="Produção Multimídia">Produção Multimídia</option>
+            <option value="Redes de Computadores">Redes de Computadores</option>
+            <option value="Sistemas de Informação">Sistemas de Informação</option>
+            <option value="Banco de Dados">Banco de Dados</option>
+            </select>
+            <input type="submit" value="Submit">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        </form>
+    </div>
+        </div>
+</article>
 
     <article>
         <section>
