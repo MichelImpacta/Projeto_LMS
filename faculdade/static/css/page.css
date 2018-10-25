@@ -16,13 +16,9 @@ nav  {
     padding: 10px;
 }
 
-
-/* formatação do login
-*/
-
 nav button{
- 
- border-radius: 4px;
+
+border-radius: 4px;
     color: #FFFFFF;
     text-align: center;
     font-size: 28px;
@@ -34,7 +30,12 @@ nav button{
     position: absolute;
     right: 3%;
     top: 29%;
+	
+}
 
+.matricula{
+  right: 15%;
+  top: 29%;
 }
 
 .button span {
@@ -62,9 +63,6 @@ nav button{
   right: 0;
 }
 
-/* formatação do login
-*/
-
 nav a{
     color: rgba(0, 0, 0, 0.932);
     text-decoration:  none;
@@ -84,7 +82,8 @@ nav li{
 nav ul{
     list-style:  none;
     text-transform: uppercase;
-    font-family: garamont;
+	font-family: garamont;
+
     /*left:100px;
     /*top:0px;*/
 }
@@ -104,7 +103,8 @@ body {
 }
 
 footer {
-   left: 0;
+    left: 0;
+    
     background-image: url("../img/fundo.png");
     padding: 10px;
     text-align: center;
@@ -114,35 +114,17 @@ footer {
     clear: both;
 }
 
+font, h2{
+	color:white;
+}
 h2{
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgb(0, 89, 255);
-    font-family:initial;
-}
-
-h6 {
-    
-}
-
-font{
-    color:white;
-    
-}
-font.color.style{
-    color:black;
-    font-style: italic;
-
-}
-font.style{
-    font-style: italic;
+	font-family:initial;
 }
 
 li{
-    color: transparent;
+	color: transparent;
 }
 
-
-/* formatação do login
-*/
+p{
+font-family: Times, Times New Roman, serif;
+}
