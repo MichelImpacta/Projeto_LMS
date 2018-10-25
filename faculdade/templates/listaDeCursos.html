@@ -1,0 +1,184 @@
+<!DOctype HTML>
+<HTML lang ="pt-br">
+    <meta charset= "utf-8">
+<head>
+    <title> Cursos </title>
+<link rel="stylesheet" type="text/css" href="./css/ListaDeCursos.css">
+<link rel="stylesheet" type="text/css" href="./css/page.css">
+<link rel="stylesheet" type="text/css" href="./css/login.css">
+<script type="text/javascript" src="./javaScripts/login.js"></script>
+
+</head>
+<body>
+
+    <header>
+            
+        <img align ="left" width="200px" height="150px" src='./img/Logo.png'>
+          
+            <h1 class = "nomepagina">Focus</h1>
+   </header>
+<nav>
+<h1>Menu Principal</h1>
+<ul>
+    <li><a href="./index.html"><font>Pagina Inicial</font></a> </li>
+    <li><a href="./listaDeCursos.html"><font>Lista de Cursos</font></a> </li>
+    <li><a href="./disciplinas.html"><font>Disciplinas</font></a> </li>
+    <li><a href="./noticias.html"><font>Noticias</font></a> </li>
+     <button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span>Login</span></button>
+     <button class="button matricula"onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><span>Matricule-se</span></button>   
+</ul>
+</nav>
+<article>
+<div id="id02" class="modal">
+  <div>
+  <form class="matricula-modal-content animate" action="/action_page.php">
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nome..">
+          
+            <label for="lname">Sobrenome:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Sobrenome..">
+          
+            <label for="Telefone">Telefone de Contato:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Telefone..">
+        
+            <label for="email">email para Contato:</label>
+            <input type="text" id="lname" name="lastname" placeholder="email..">
+        
+            <label for="Selecione o Curso">Selecione o Curso</label>
+            <select id="Curso" name="Cursos..">
+            <option value="Administração">Administração</option>
+            <option value="Analise e Desenvolvimento de Sistemas">Analise e Desenvolvimento de Sistemas</option>
+            <option value="Gestão Tecnologia da Informação">Gestão Tecnologia da Informação</option>
+            <option value="Jogos Digitais">Jogos Digitais</option>
+            <option value="Sociedade e Sustentabilidade">Sociedade e Sustentabilidade</option>
+            <option value="Produção Multimídia">Produção Multimídia</option>
+            <option value="Redes de Computadores">Redes de Computadores</option>
+            <option value="Sistemas de Informação">Sistemas de Informação</option>
+            <option value="Banco de Dados">Banco de Dados</option>
+            </select>
+            <input type="submit" value="Submit">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        </form>
+    </div>
+        </div>
+    </div>
+</div>
+</article>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+<div class="container">
+      <label for="uname"><b>Login</b></label>
+      <input type="text" placeholder="Digite o Usuario" name="uname" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Digite a Senha" name="psw" required>
+        
+	  <button type="submit" style="
+		width: 12%;
+		background-color: green;
+		padding: 1%; ">Entrar</button>
+	
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Lembrar 
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="psw">Esqueceu a <a href="#">Senha?</a></span>
+    </div>
+  </form>
+</div>
+
+ 
+<article>
+<h2 class="titulo" align = "center">Cursos</h2>
+
+<h1 align = "center" ><p>Os cursos de Graduação  são estruturados para oferecer o que há de melhor 
+        em ensino e tecnologia para os alunos.<br> Veja os cursos oferecidos:</p></h1>
+
+<section>
+<div = class ="borda">  
+<h2>Administração</h2>
+
+<h3 align = "center">Inteligencia de Negocios<br> e Gestão de Projetos</h3>
+
+</div>
+
+<div = class ="borda">  
+        <h2>Analise e Desenvolvimento<br> de Sistemas</h2>
+        
+        <h3>Iot , DevOps , & Mobile</h3>
+        
+        </div>
+
+<div = class ="borda"> 
+
+        <h2>Banco de Dados</h2>
+
+<h3 align = "center">Data analytics & Big data</h3>
+
+</div>
+
+<div = class ="borda"> 
+
+        <h2>Gestão da tecnologia da informação</h2>
+
+<h3 align = "center">ERP & Gestão  e Qualidade</h3>
+
+</div>
+
+<div = class ="borda"> 
+
+        <h2>Jogos Digitais</h2>
+
+<h3 align = "center"> Design de Games e Game Progamming</h3>
+
+</div>
+
+<div = class ="borda"> 
+
+        <h2>Processos gerenciais</h2>
+
+<h3 align = "center">Inteligencia de Negocios & Viabilidade e Projetos</h3>
+
+</div>
+
+<div = class ="borda"> 
+
+        <h2> Produção Multimida </h2>
+
+<h3 align = "center">Web Design, Audio Visual & Design Digital</h3>
+
+</div>
+<div = class ="borda"> 
+
+        <h2>Redes Computadores</h2>
+
+<h3 align = "center">Cloud Computing & Cyber Security</h3>
+
+</div>
+<div = class ="borda"> 
+
+        <h2>Sistemas de Informação</h2>
+
+<h3 align = "center">Businnes Agilly & Computação Cognitiva</h3>
+
+</div>
+
+</section> 
+</article>
+<footer>
+        Projeto LMS - Todos os Direitos Reservados  
+</footer>
+
+</body>    
+</HTML>
+
