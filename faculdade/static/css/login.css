@@ -67,6 +67,16 @@ span.psw {
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
+.matricula-modal-content /* formatação da matricula */
+{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 45px solid #888;
+    border-color: white;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
 /* The Close Button (x) */
 .close {
     position: absolute;
@@ -108,9 +118,8 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
-}
-
-
+	
 div button{
-    padding: 1px;
+	padding: 1px;
+}
 }
