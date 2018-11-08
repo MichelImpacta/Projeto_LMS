@@ -43,3 +43,14 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
